@@ -16,11 +16,11 @@ RUN_VER = 'open'
 # SaaS应用ID
 APP_CODE = 'bastion'
 # SaaS安全密钥，注意请勿泄露该密钥
-SECRET_KEY = os.getenv("APP_TOKEN", '4f49d205-87fc-4137-a446-27ab878bfa4c')
+SECRET_KEY = os.getenv("APP_TOKEN", '9b08cb45-5c51-459a-9faf-21f9bc8fcf58')
 # PAAS平台URL
-BK_URL = os.getenv("BK_PAAS_HOST", "http://paas.opsany.com")
+BK_URL = os.getenv("BK_PAAS_HOST", "http://bkdev-paas3.canway.net:8082")
 # UploadPath
-UPLOAD_PATH = os.getenv("BKAPP_UPLOAD_PATH", "/opt/opsany/")
+UPLOAD_PATH = os.getenv("BK_APP_UPLOAD_PATH", "/opt/opsany/")
 # IAM URL
 BK_IAM_HOST = os.getenv("BK_IAM_V3_INNER_HOST", "http://bkiam.service.consul:5001")
 

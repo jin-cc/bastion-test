@@ -12,7 +12,7 @@ RUN_MODE = 'STAGING'
 DEBUG = True
 
 # Terminal log path
-TERMINAL_PATH = os.getenv("BKAPP_TERMINAL_PATH", "/opt/opsany/uploads/terminal")
+TERMINAL_PATH = os.getenv("BK_APP_TERMINAL_PATH", "/opt/opsany/uploads/terminal")
 # 正式环境的日志级别可以在这里配置
 # V2
 # import logging
