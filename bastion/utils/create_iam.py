@@ -4,22 +4,22 @@ import requests
 
 def init_system_to_iam():
     system_info = {
-        "id": "bastion-blueking",
+        "id": "bastion",
         "name": "堡垒机IAM测试",
-        "name_en": "bastion-blueking",
+        "name_en": "bastion",
         "description": "堡垒机IAM测试",
         "description_en": "bastion iam test",
-        "clients": "bastion-blueking,",
+        "clients": "bastion,",
         "provider_config": {
-            "host": "http://paas.opsany.com/t/bastion-blueking/",
+            "host": "http://bkdev-paas3.canway.net:8082/t/bastion/",
             "auth": "basic",
             "healthz": "/test/"
         }
     }
     # 必须是内网
     IAM_HOST = "http://bkiam.service.consul:5001"
-    APP_CODE = "bastion-blueking"
-    SECRET_KEY = "4f49d205-87fc-4137-a446-27ab878bfa4c"
+    APP_CODE = "bastion"
+    SECRET_KEY = "9b08cb45-5c51-459a-9faf-21f9bc8fcf58"
     API = "/api/v1/model/systems/"
     URL = IAM_HOST + API
     # A = "http://paas.opsany.com/bk_iam"
