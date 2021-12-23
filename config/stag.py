@@ -29,8 +29,8 @@ DATABASES.update(
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'bastion',  # 数据库名
             'USER': 'bastion',  # 数据库用户
-            'PASSWORD': 'bastion',  # 数据库密码
-            'HOST': '172.16.16.3',  # 数据库主机
+            'PASSWORD': 'OpsAny@2020',  # 数据库密码
+            'HOST': '192.168.110.223',  # 数据库主机
             'PORT': '3306',  # 数据库端口
             # 'ATOMIC_REQUESTS': True,
         },
@@ -40,7 +40,7 @@ DATABASES.update(
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://172.16.16.3:6379/1",
+        "LOCATION": "redis://192.168.110.204:6379/1",
         'TIMEOUT': 86400,  # 1天
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
@@ -50,7 +50,7 @@ CACHES = {
         },
     "cache": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://172.16.16.3:6379/9",
+        "LOCATION": "redis://192.168.110.204:6379/9",
         'TIMEOUT': 1800,  # 30分钟
         "OPTIONS": {
             "CLIENT_CALSS": "django_redis.client.DefaultClient",
